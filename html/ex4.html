@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <form>
+        <h1>Problem 4</h1>
+        <p>
+          <label for="username">Name</label>:
+          <input type="text" name="username" id="username" required>
+          <span id="usernameHelp"></span>
+        </p>
+        <p>
+          <label for="emailAddress">Email</label>:
+          <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@domain">
+          <span id="emailHelp"></span>
+        </p>
+        <p>
+          <input type="radio" name="payment" id="cash" value="Cash">
+          <label for="cash">Cash</label>
+          <br>
+          <input type="radio" name="payment" id="cc" value="Credit Card">
+          <label for="cc">Credit Card</label>
+          <br>
+          <input type="radio" name="payment" id="gp" value="Google Pay" checked>
+          <label for="no">Google Pay</label>
+          <br>
+          <input type="radio" name="payment" id="ap" value="Apple Pay" checked>
+          <label for="ap">Apple Pay</label>
+        </p>
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">Sign me up for special promotions</label>
+        </p>
+        <p>
+          <label for="location">Preferred Location</label>:
+          <select name="location" id="location">
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Orange County">Orange County</option>
+            <option value="Riverside">Riverside</option>
+            <option value="San Diego">San Diego</option>
+          </select>
+        </p>
+      
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+      </form>
+      <div id="tableplace">
+        <p> </p>
+      </div>
+ <script src="../js/ex4.js"></script>   
+</body>
+</html>
